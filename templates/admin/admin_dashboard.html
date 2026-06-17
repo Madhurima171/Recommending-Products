@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h1>Admin Dashboard</h1>
+    <a href="/admin/add" class="btn btn-success mb-4">Add Product</a>
+    
+    <h3 class="mb-4">Trending Analytics</h3>
+    <table class="table table-bordered mb-5">
+        <thead class="table-dark">
+            <tr>
+                <th>Product</th>
+                <th>Total Interactions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in analytics %}
+            <tr>
+                <td>{{ item.name }}</td>
+                <td>{{ item.total }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h3>Product Management</h3>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+        {% for product in products %}
+        <tr>
+            <td>{{ product.id }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.category }}</td>
+            <td>
+                <a href="/admin/delete/{{ product.id }}" class="btn btn-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>

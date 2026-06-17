@@ -1,0 +1,13 @@
+id,name,category,description,image
+1,RTX Gaming PC,Desktop,High performance gaming desktop,gamingpc.jpg
+2,MacBook Pro,Laptop,Apple professional laptop,macbook.jpg
+3,Dell Monitor,Monitor,27 inch IPS monitor,monitor.jpg
+4,Corsair PSU,Power,750W power supply,psu.jpg
+5,iPhone 15,Phone,Apple flagship smartphone,iphone.jpg
+6,Samsung Tab S9,Tablet,Android tablet for productivity,tablet.jpg
+7,Canon EOS R50,Camera,Mirrorless camera,camera.jpg
+8,Windows 11 Pro,Software,Operating system,windows.jpg
+9,Synology NAS,Server & Storage,Cloud storage solution,nas.jpg
+10,Razer Mouse,Accessories,Gaming mouse,mouse.jpg
+11,PlayStation 5,Gaming,Next gen gaming console,ps5.jpg
+12,Sony Bravia,TV,4K Smart Television,tv.jpg
